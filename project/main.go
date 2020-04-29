@@ -9,5 +9,6 @@ import (
 func main() {
 	controllers.RegisterControllers()
 	// ip addr, server mux(muliplexer)
+	// nil here means default serve mux
 	http.ListenAndServe(":3000", nil)
 }
